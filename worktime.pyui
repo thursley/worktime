@@ -1,0 +1,73 @@
+[
+  {
+    "nodes" : [
+      {
+        "nodes" : [
+
+        ],
+        "frame" : "{{16, 14}, {90, 90}}",
+        "class" : "Button",
+        "attributes" : {
+          "action" : "log_in",
+          "image_name" : "iob:briefcase_256",
+          "frame" : "{{80, 104}, {80, 32}}",
+          "title" : "in",
+          "uuid" : "2FDE4ACF-F841-4AEB-9FFA-5557B2B31AA0",
+          "class" : "Button",
+          "background_color" : "RGBA(0.000000,0.758427,0.216693,1.000000)",
+          "name" : "button_in",
+          "font_size" : 15
+        },
+        "selected" : false
+      },
+      {
+        "nodes" : [
+
+        ],
+        "frame" : "{{134, 14}, {90, 90}}",
+        "class" : "Button",
+        "attributes" : {
+          "action" : "log_out",
+          "font_size" : 15,
+          "frame" : "{{80, 104}, {80, 32}}",
+          "title" : "in",
+          "uuid" : "2FDE4ACF-F841-4AEB-9FFA-5557B2B31AA0",
+          "class" : "Button",
+          "background_color" : "RGBA(0.983146,0.875108,0.226880,1.000000)",
+          "name" : "button_out",
+          "image_name" : "iob:beer_256"
+        },
+        "selected" : false
+      },
+      {
+        "nodes" : [
+
+        ],
+        "frame" : "{{-146, 131}, {434, 32}}",
+        "class" : "Label",
+        "attributes" : {
+          "font_size" : 18,
+          "frame" : "{{45, 104}, {150, 32}}",
+          "uuid" : "232E574C-97B1-4EA8-BBB1-116CB7466377",
+          "class" : "Label",
+          "alignment" : "left",
+          "text" : "Label",
+          "name" : "label_time",
+          "font_name" : "<System>"
+        },
+        "selected" : true
+      }
+    ],
+    "frame" : "{{0, 0}, {300, 240}}",
+    "class" : "View",
+    "attributes" : {
+      "name" : "worktime",
+      "enabled" : true,
+      "background_color" : "RGBA(1.000000,1.000000,1.000000,1.000000)",
+      "tint_color" : "RGBA(0.000000,0.478000,1.000000,1.000000)",
+      "border_color" : "RGBA(0.000000,0.000000,0.000000,1.000000)",
+      "flex" : ""
+    },
+    "selected" : false
+  }
+]
