@@ -15,8 +15,8 @@
           "uuid" : "2FDE4ACF-F841-4AEB-9FFA-5557B2B31AA0",
           "class" : "Button",
           "background_color" : "RGBA(0.000000,0.758427,0.216693,1.000000)",
-          "name" : "button_in",
-          "font_size" : 15
+          "font_size" : 15,
+          "name" : "button_in"
         },
         "selected" : false
       },
@@ -28,13 +28,13 @@
         "class" : "Button",
         "attributes" : {
           "action" : "log_out",
-          "font_size" : 15,
+          "name" : "button_out",
           "frame" : "{{80, 104}, {80, 32}}",
           "title" : "in",
           "uuid" : "2FDE4ACF-F841-4AEB-9FFA-5557B2B31AA0",
           "class" : "Button",
           "background_color" : "RGBA(0.983146,0.875108,0.226880,1.000000)",
-          "name" : "button_out",
+          "font_size" : 15,
           "image_name" : "iob:beer_256"
         },
         "selected" : false
@@ -43,16 +43,16 @@
         "nodes" : [
 
         ],
-        "frame" : "{{-146, 131}, {434, 32}}",
+        "frame" : "{{16, 119}, {246, 32}}",
         "class" : "Label",
         "attributes" : {
-          "font_size" : 18,
+          "name" : "label_time",
           "frame" : "{{45, 104}, {150, 32}}",
           "uuid" : "232E574C-97B1-4EA8-BBB1-116CB7466377",
           "class" : "Label",
           "alignment" : "left",
           "text" : "Label",
-          "name" : "label_time",
+          "font_size" : 18,
           "font_name" : "<System>"
         },
         "selected" : true
@@ -61,11 +61,11 @@
     "frame" : "{{0, 0}, {300, 240}}",
     "class" : "View",
     "attributes" : {
-      "name" : "worktime",
+      "border_color" : "RGBA(0.000000,0.000000,0.000000,1.000000)",
       "enabled" : true,
       "background_color" : "RGBA(1.000000,1.000000,1.000000,1.000000)",
+      "name" : "worktime",
       "tint_color" : "RGBA(0.000000,0.478000,1.000000,1.000000)",
-      "border_color" : "RGBA(0.000000,0.000000,0.000000,1.000000)",
       "flex" : ""
     },
     "selected" : false
