@@ -1,4 +1,4 @@
-import ui
+import ui, appex
 import datetime as dt
 import os
 import json5
@@ -59,6 +59,7 @@ def log_in(sender):
     raise Exception('last entry has no "out"')
   times[today].append({'in': get_time()})
   update_json(times)
+  update_time(sender)
 
 
 def log_out(sender):
@@ -66,7 +67,7 @@ def log_out(sender):
   times[get_today()][-1]['out']  = get_time()
   update_json(times)
   update_time(sender)
-
+ 
 
 if not os.path.isfile(json_file):
   times = {}
@@ -74,5 +75,6 @@ if not os.path.isfile(json_file):
     json5.dump(times, file)
 
 v = ui.load_view()
-v.present('sheet')
+# v.present('sheet')
+appex.set_widget_view(v)
 
