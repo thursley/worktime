@@ -28,7 +28,7 @@ def get_worked_today():
     times_today = get_times()[get_today()]
     time_worked = dt.timedelta(0)
     for range in times_today:
-        if 'end' in range:
+        if 'out' in range:
             end = to_datetime(range['out'])
             start = to_datetime(range['in'])
             time_worked += end - start
@@ -51,6 +51,7 @@ def log_out(sender):
     times = get_times()
     times[get_today()][-1]['out']  = get_time()
     update_json(times)
+    sender.superview['label_time'].text = str(get_worked_today())
 
 
 if not os.path.isfile(json_file):
